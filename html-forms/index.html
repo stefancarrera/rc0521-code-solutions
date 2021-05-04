@@ -8,8 +8,9 @@
     <form action="http://www.example.com/coding.php" method="get">
     <div>
       <label for="email">Email:
-        <br>
-        <input type="text" name="email">
+      <div>
+        <input id="email" type="text" name="email">
+      </div>
       </label>
     </div>
     <div>
@@ -22,25 +23,31 @@
     </select>
     <div>
       Favorite Language (choose one)
-      <br>
-      <input id="HTML" type="radio" name="fav-lang" value="html">
-      <label for="HTML">HTML</label>
-      <input id="CSS" type="radio" name="fav-lang" value="css">
-      <label for="CSS">CSS</label>
-      <input id="JavaScript" type="radio" name="fav-lang" value="javascript">
-      <label for="JavaScript">JavaScript</label>
+      <div>
+      <input id="html" type="radio" name="fav-lang" value="html">
+      <label for="html">HTML</label>
+      <input id="css" type="radio" name="fav-lang" value="css">
+      <label for="css">CSS</label>
+      <input id="javascript" type="radio" name="fav-lang" value="js">
+      <label for="javascript">JavaScript</label>
+      </div>
     </div>
     <div>
+      <label for="sign-up">
       Would you like to sign up for more information?
-      <br>
+      <div>
       <input id="sign-up" type="checkbox" name="more-info" value="sign-me-up" checked="checked">Sign me up!
+      </div>
+      </label>
     </div>
     <div>
+      <label for="comments">
       Comments
-      <br>
-      <textarea name="comments" cols="20" rows="4"></textarea>
-      <br>
+      <div>
+      <textarea id="comments" name="comments" cols="20" rows="4"></textarea>
+      </div>
       <input type="submit" value="Submit">
+      </label>
     </div>
     </form>
   </body>
