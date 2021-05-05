@@ -1,0 +1,16 @@
+.top {
+  font-family: 'Permanent Marker', cursive;
+  line-height: 200%;
+}
+
+.second {
+  font-family: 'Permanent Marker', cursive;
+  line-height: 150%;
+}
+
+p {
+  font-family: 'Shadows Into Light', cursive;
+  line-height: 150%;
+  font-size: large;
+  font-weight: bold;
+}
