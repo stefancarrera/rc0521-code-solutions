@@ -1,0 +1,55 @@
+h2 {
+  text-transform: uppercase;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  color: #ec5d57;
+}
+
+button {
+  background-color: #ec5d57;
+  color: white;
+  border-radius: 30px;
+  padding: 5px;
+  margin-left: 82%;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 18%;
+  font-weight: bold;
+  border-color: transparent;
+  font-size: small;
+}
+
+fieldset {
+  border: transparent;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+div {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: x-small;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0%;
+  border-radius: 5px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}
+
+select {
+  margin-bottom: 0.5em;
+}
