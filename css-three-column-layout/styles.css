@@ -57,13 +57,20 @@ p {
 }
 
 .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: white;
   width: 100px;
   height: 100px;
 }
 
-div > img {
-  margin-top: 25px;
-  width: 50%;
+img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
 }
