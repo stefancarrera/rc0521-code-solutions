@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+}
+
+div > h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.first-p {
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+p {
+  color: gray;
+  font-family: 'Karla', sans-serif;
+  width: 80%;
+  line-height: 1.5em;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+div > img {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+section {
+  margin-top: 35px;
+}
+
+button {
+  border-color: #dc7671;
+  border-style: solid;
+  background-color: white;
+  padding: 7px 23px 7px 23px;
+  color: #dc7671;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: normal;
+  text-transform: uppercase;
+}
