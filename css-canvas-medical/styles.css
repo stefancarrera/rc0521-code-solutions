@@ -1,0 +1,297 @@
+
+/* header css */
+
+.header {
+  border-bottom: solid 1px;
+  border-color: #7c7c7c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+}
+
+div.header-center > a > img {
+  width: 50%;
+  position: relative;
+}
+
+.header-center {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  font-family: 'Avenir', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #7c7c7c;
+  padding: 0 1rem 0 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-us {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #294464;
+  color: white;
+  font-weight: normal;
+}
+
+/* main body css */
+
+.sect1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.heroimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 450px;
+  position: relative;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+}
+
+.herotxt > h1 {
+  font-family: 'Tiempos Headline', 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: normal;
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+}
+
+.herotxt > p {
+  font-family: 'Avenir', sans-serif;
+  color: white;
+  position: absolute;
+  width: 450px;
+  top: 10rem;
+  left: 4rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 900px;
+  height: 450px;
+}
+
+.startbox {
+  position: absolute;
+  top: 22rem;
+  left: 4rem;
+  background-color: #294464;
+  width: 8rem;
+  height: 3rem;
+}
+
+.get-started {
+  background-color: #294464;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  font-weight: strong;
+  text-align: center;
+}
+
+.sect2 {
+  background-color: #f0f5f5;
+  border: 1px;
+  border-color: #7c7c7c;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.column-half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.column-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.column-full > p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+  color: #636060;
+  margin-top: 0;
+  font-size: small;
+}
+
+.column-full > h2 {
+  font-family: 'Tiempos Headline', 'Times New Roman', Times, serif;
+  color: #5e5d5d;
+  font-weight: normal;
+  font-size: x-large;
+  margin-bottom: 0.5rem;
+}
+
+.column-half > p {
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+  color: #5e5d5d;
+}
+
+/* footer css */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footertop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+}
+
+.learnmore > h2 {
+  font-family: 'Tiempos Headline', 'Times New Roman', Times, serif;
+  color: #5e5d5d;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.learnmore > p {
+  font-family: 'Avenir', sans-serif;
+  color: #636060;
+  margin-top: 0;
+  font-size: small;
+}
+
+.startbox2 {
+  background-color: #294464;
+  width: 8rem;
+  height: 3rem;
+}
+
+.gray {
+  background-color: #525351;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1000px;
+}
+
+.column-half-gray {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.column-half-gray > p {
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  font-size: small;
+}
+
+.logo-white {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.row-half-gray {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.column-half-gray > h3 {
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.column-half-gray > a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  font-size: small;
+  line-height: 2rem;
+}
+
+.row-half-gray > .column-half-gray {
+  width: 25%;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+  font-family: 'Avenir', sans-serif;
+  color: #636060;
+}
+
+.privacy > div {
+  margin: 2rem 2rem 2rem 0;
+}
+
+.privacy > div > p > a {
+  text-decoration: none;
+  color: #636060;
+}
