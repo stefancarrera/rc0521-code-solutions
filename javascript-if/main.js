@@ -14,8 +14,7 @@ function isUnderFive(number) {
 }
 
 function isEven(number) {
-  var remainder = (number % 2);
-  var even = (remainder === 0);
+  var even = ((number % 2) === 0);
   return even;
 }
 
@@ -35,15 +34,16 @@ function isOldEnoughToDrive(person) {
 }
 
 function isOldEnoughToDrinkAndDrive(person) {
-  var drinkAndDrive = (person === 'thirty-one-flavors');
-  return drinkAndDrive;
+  return false;
 }
 
 function categorizeAcidity(pH) {
   if ((pH < 7) && (pH >= 0)) {
     return 'acid';
-  } if ((pH <= 14) && (pH >= 7)) {
+  } if ((pH <= 14) && (pH > 7)) {
     return 'base';
+  } if (pH === 7) {
+    return 'neutral';
   } else {
     return 'invalid pH level';
   }
