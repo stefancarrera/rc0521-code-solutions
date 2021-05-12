@@ -1,0 +1,74 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+mark {
+  background-color: #ebded4;
+}
+
+p {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: calc(100% / 5);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.shoppingItems {
+  height: 400px;
+  width: 100%;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 0.5rem;
+}
+
+.gray {
+  color: lightgray;
+  margin-left: 0.5rem;
+}
+
+.grayStrike {
+  margin-left: 0.5rem;
+  color: lightgray;
+  text-decoration: line-through;
+}
