@@ -7,4 +7,5 @@ $contactForm.addEventListener('submit', function (event) {
   allValues.email = document.forms[0].elements[1].value;
   allValues.message = document.forms[0].elements[2].value;
   console.log(allValues);
+  $contactForm.reset();
 });
