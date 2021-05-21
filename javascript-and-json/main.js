@@ -18,12 +18,12 @@ var books = [
 
 console.log('array of books', books, typeof books);
 
-var JSONbooks = JSON.stringify(books);
+var jsonBooks = JSON.stringify(books);
 
-console.log('JSON books', JSONbooks, typeof JSONbooks);
+console.log('jsonBooks', jsonBooks, typeof jsonBooks);
 
 var student = '{"ID":"031941150", "Name":"Billy Baston"}';
 console.log('student', student, typeof student);
 
-var JSONstudent = JSON.parse(student);
-console.log('JSONstudent', JSONstudent, typeof JSONstudent);
+var jsonStudent = JSON.parse(student);
+console.log('jsonStudent', jsonStudent, typeof jsonStudent);
