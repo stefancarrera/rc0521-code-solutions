@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+span {
+  display: inline-block;
+  margin: -12px;
+}
+
+p {
+  display: inline-block;
+  margin: -10px;
+}
+
+.sentence {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.space {
+  color: white;
+  border: 0;
+  display: inline;
+}
+
+.typed {
+  color: #18cd1b;
+}
+
+.misTyped {
+  color: #f80707;
+}
+
+.currentLetter {
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid black;
+}
