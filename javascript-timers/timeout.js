@@ -5,3 +5,5 @@ function hello() {
 }
 
 setTimeout(hello, 2.0 * 1000);
+
+clearInterval(setTimeout);
