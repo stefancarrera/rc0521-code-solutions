@@ -2,8 +2,11 @@ var $h1 = document.querySelector('h1');
 
 function hello() {
   $h1.textContent = 'Hello There';
+  clear();
 }
 
-setTimeout(hello, 2.0 * 1000);
+var intervalId = setTimeout(hello, 2.0 * 1000);
 
-clearInterval(setTimeout);
+function clear() {
+  clearInterval(intervalId);
+}
