@@ -1,0 +1,38 @@
+body {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.picBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin-top: 10%;
+  border: solid 5px black;
+}
+
+.circleRow {
+  justify-content: center;
+  align-content: center;
+}
+
+.next {
+  position: absolute;
+  font-size: 60px;
+  right: 0;
+  margin-right: 3rem;
+}
+
+.prev {
+  position: absolute;
+  font-size: 60px;
+  left: 0;
+  margin-left: 3rem;
+}
+
+.fa-circle {
+  margin: 0 0.5rem 0.75rem 0.5rem;
+}
