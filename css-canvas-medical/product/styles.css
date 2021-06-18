@@ -149,16 +149,16 @@ div.header-center > a > img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  border-top: solid 1px #7c7c7c;
 }
 
 .footertop {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  width: 1000px;
+  width: 100%;
 }
 
 .learnmore > h2 {
@@ -179,14 +179,6 @@ div.header-center > a > img {
   background-color: #294464;
   width: 8rem;
   height: 3rem;
-}
-
-.get-started {
-  background-color: #294464;
-  color: white;
-  font-family: 'Avenir', sans-serif;
-  font-weight: strong;
-  text-align: center;
 }
 
 .gray {
@@ -210,8 +202,7 @@ div.header-center > a > img {
   justify-content: center;
   align-items: flex-start;
   width: 50%;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin: 5rem 0 5rem 2rem;
 }
 
 .column-half-gray > p {
@@ -269,4 +260,12 @@ div.header-center > a > img {
 .privacy > div > p > a {
   text-decoration: none;
   color: #636060;
+}
+
+.get-started {
+  background-color: #294464;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  font-weight: strong;
+  text-align: center;
 }
