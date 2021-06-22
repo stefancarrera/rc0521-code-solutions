@@ -1,0 +1,442 @@
+    1  git config --global user.name "Stefan Carrera"
+    2  git config --global user.email "stefancarrera@gmail.com"
+    3  git config --global --list
+    4  cd ~/repos/rc0521-code-solutions/
+    5  git status
+    6  git checkout master
+    7  git pull origin master
+    8  git checkout -b http-messages
+    9  pwd
+   10  https httpie.io/hello
+   11  http http://example.com
+   12  http --verbose http://www.example.com
+   13  http --body GET https://jsonplaceholder.typicode.com/users > user.json
+   14  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   15  pwd
+   16  cd ~/repos/rc0521-code-solutions/http-messages
+   17  pwd
+   18  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   19  http --body GET http://example.com > index.html
+   20  git status
+   21  git add http-messages
+   22  git status
+   23  git checkout -b http-messages
+   24  git add http-messages
+   25  git status
+   26  git commit -m "Completed http-messages."
+   27  git status
+   28  git checkout master
+   29  git checkout -b http-messages
+   30  git checkout http-messages
+   31  git status
+   32  git add http-messages
+   33  git commit -m "Completed http-messages."
+   34  cd ~/repos/rc0521-code-solutions/
+   35  git add http-messages
+   36  git status
+   37  git commit -m "Completed http-messages."
+   38  git push origin http-messages
+   39  git checkout master
+   40  git pull origin master
+   41  git checkout -b javascript-ajax
+   42  git status
+   43  git add javascript-ajax
+   44  git status
+   45  git commit -m "Completed javascript-ajax."
+   46  git push origin javascript-ajax
+   47  git checkout master
+   48  git pull origin master
+   49  git status
+   50  cd ~/repos/rc0521-code-solutions/
+   51  pwd
+   52  cd ~/repos
+   53  dir
+   54  cd driving-game
+   55  git status
+   56  git add index.html
+   57  git add main.js
+   58  git add styles.css
+   59  git status
+   60  git commit -m "Completed issue-3, the ship goes."
+   61  git status
+   62  git add main.js
+   63  git commit -m "Completed issue-3, the ship goes."
+   64  git add main.js
+   65  git status
+   66  git commit -m "Completed issue-3, the ship goes."
+   67  git add main.js
+   68  git commit -m "Completed issue-3, the ship goes."
+   69  git add main.js
+   70  git commit -m "Completed issue-3, the ship goes."
+   71  git status
+   72  git push origin issue-3-user-can-start-the-car
+   73  git checkout master
+   74  git pull origin master
+   75  checkout -b "issue-4-user-can-stop"
+   76  git checkout -b issue-4-user-can-stop
+   77  git status
+   78  git add main.js
+   79  git status
+   80  git commit -m "Completed issue-4, user can stop the ship."
+   81  git push origin issue-4-user-can-stop
+   82  git checkout master
+   83  git pull origin master
+   84  git checkout -b issue-5-user-can-steer
+   85  git status
+   86  git add index.html
+   87  git add main.js
+   88  git add styles.css
+   89  git add images/rocket1.png
+   90  git add images/rocket2.png
+   91  git add images/rocket3.png
+   92  git status
+   93  commit -m commit "issue-5 complete with additional features."
+   94  git commit -m "issue 5 complete with additional features."
+   95  git push origin issue-5-user-can-steer
+   96  git checkout master
+   97  dir
+   98  pwd
+   99  http https://www.dnd5eapi.co/api/spells/acid-arrow/
+  100  cd ~/repos/driving-game/
+  101  git checkout issue-5-user-can-steer 
+  102  git checkout master
+  103  cd ~/repos/ajax-project/
+  104  git status
+  105  git add css/styles.css
+  106  git add index.html
+  107  git add js/main.js
+  108  git status
+  109  git commit -m 'issue1-complete.'
+  110  git push origin issue1-user-can-select-class 
+  111  git checkout master
+  112  git pull origin master
+  113  git status
+  114  git checkout -b issue2-spells-by-level
+  115  git status
+  116  git add css/styles.css
+  117  git add index.html
+  118  git add js/main.js
+  119  git status
+  120  git commit -m "Added spell buttons and event listeners for clicking them."
+  121  git push origin issue2-spells-by-level 
+  122  git status
+  123  git add index.html
+  124  git add js/main.js
+  125  git status
+  126  git add index.html
+  127  git add js/main.js
+  128  git status
+  129  git commit -m "Completed issue-2"
+  130  git push origin issue2-spells-by-level 
+  131  git checkout master
+  132  git pull origin master
+  133  git checkout -b issue-3-user-can-view-spell-details
+  134  git status
+  135  git add css/styles/css
+  136  git add index.html
+  137  git add js/main.js
+  138  git add css/styles.css
+  139  git status
+  140  git commit -m "Completed issue 3, user can view spell details."
+  141  git push origin issue-3-user-can-view-spell-details 
+  142  git checkout master
+  143  git pull origin master
+  144  git checkout -b 'issue-4-user-can-filter-spells-by-class
+  145  pwd
+  146  cd ~/repos/ajax-project/
+  147  git checkout master
+  148  cd ~/repos/ajax-project/
+  149  git status
+  150  git checkout -b 'issue4-user-can-filter-spells-by-level'
+  151  git status
+  152  git add css/styles.css
+  153  git add index.html
+  154  git add js/main.js
+  155  git status
+  156  git commit -m "Added a filter by class button."
+  157  git push origin issue4-user-can-filter-spells-by-level 
+  158  git status
+  159  git add css/styles.css
+  160  git add index.html
+  161  git add js/data.js
+  162  git add js/main.js
+  163  git status
+  164  git commit -m "Completed issue-4 user can filter spells by level."
+  165  git status
+  166  git add js/main.js
+  167  git status
+  168  git commit -m "Completed issue-4 user can filter spells by level."
+  169  git push origin issue4-user-can-filter-spells-by-level 
+  170  git checkout master
+  171  cd ~/repos/ajax-project/
+  172  git status
+  173  node /v
+  174  node -v
+  175  git pull master origin
+  176  git pull origin master
+  177  git checkout -b issue5-user-can-roll-dice
+  178  git status
+  179  git add css/styles.css
+  180  git add images/dice/d10-fill.svg
+  181  git add images/dice/d12-fill.svg
+  182  git add images/dice/d20-fill.svg
+  183  git add images/dice/d4-fill.svg
+  184  git add images/dice/d6-fill.svg
+  185  git add images/dice/d8-fill.svg
+  186  git add index.html
+  187  git add js/main.js
+  188  git status
+  189  git commit -m "html and css complete for the dice roller"
+  190  git status
+  191  git add js/main.js
+  192  git commit -m "html and css complete for the dice roller"
+  193  git add js/main.js
+  194  git commit -m "html and css complete for the dice roller"
+  195  git push origin master
+  196  git status
+  197  git push origin issue5-user-can-roll-dice 
+  198  git status
+  199  git add index.html
+  200  git add js/main.js
+  201  git status
+  202  git commit -m "Completed issue5 user can roll dice."
+  203  git push origin issue5-user-can-roll-dice 
+  204  git status
+  205  git add js/main.js
+  206  git commit -m "Completed issue5 & fixed a dice rolling issue."
+  207  git status
+  208  git add js/main.js
+  209  git commit -m "Completed issue5 & fixed a dice rolling issue."
+  210  git push origin issue5-user-can-roll-dice 
+  211  git checkout master
+  212  git pull origin master
+  213  cd ~/repos/ajax-project/
+  214  git status
+  215  git checkout master
+  216  git pull origin master
+  217  git status
+  218  cd ~/repos/ajax-project/
+  219  git status
+  220  git checkout -b design-3d-dice-rolling
+  221  git status
+  222  git add css/styles.css
+  223  git add index.html
+  224  git add js/data.js
+  225  git add js/main.js
+  226  git status
+  227  git commit -m "Added an h1 element to the top div and moved the class desc array to data.js"
+  228  git status
+  229  git add js/data.js
+  230  git add js/main.js
+  231  git status
+  232  git commit -m "Added an h1 element to the top div and moved the class desc array to data.js"
+  233  git push origin design-3d-dice-rolling 
+  234  git status
+  235  cd ~/repos/ajax-project/
+  236  git status
+  237  git add images/animated/
+  238  git status
+  239  git add css/styles.css
+  240  git add index.html
+  241  git add js/main.js
+  242  git status
+  243  git commit -m "Added a dice roll gif image to the roll button and fixed the responsive sizing."
+  244  git push origin design-3d-dice-rolling 
+  245  git checkout master
+  246  git checkout design-3d-dice-rolling 
+  247  git status
+  248  git checkout master
+  249  git checkout design-3d-dice-rolling 
+  250  git status
+  251  git add js/main.js
+  252  git status
+  253  git commit -m "when a user is looking at class that cant use spells, the spell class list says they cant use spells."
+  254  git push origin design-3d-dice-rolling 
+  255  git checkout master
+  256  git pull origin master
+  257  cd ~/repos/driving-game/
+  258  git pull origin master
+  259  cd ~/repos/ajax-project/
+  260  git status
+  261  git add css/styles.css
+  262  git add images/animated/D4.gif
+  263  git add images/animated/D8.gif
+  264  git add index.html
+  265  git add js/main.js
+  266  git status
+  267  git commit -m "Changed the roll result position and minor UI adjustments."
+  268  git push origin polish2
+  269  git checkout master
+  270  git checkout polish2
+  271  git status
+  272  git add index.html
+  273  git status
+  274  git commit -m "Removed commented out code."
+  275  git push origin polish2
+  276  git checkout master
+  277  git checkout polish2
+  278  git status
+  279  git add js/data.js
+  280  js/main.js
+  281  git add js/main.js
+  282  git status
+  283  git commit -m "Removed esline commented out code sections."
+  284  git status
+  285  git add js/data.js
+  286  git commit -m "Removed eslint commented out code."
+  287  git push origin polish2
+  288  git checkout master
+  289  git pull origin master
+  290  git status
+  291  git checkout -b ui-tweaking
+  292  git status
+  293  git add css/styles.css 
+  294  git add index.html
+  295  git add js/main.js
+  296  git status
+  297  git commit -m "Added button highlighting for spell levels and a background for roll results."
+  298  git push origin ui-tweaking
+  299  git status
+  300  git add js/main.js
+  301  git status
+  302  git commit -m "Reset roll results when clicking on a new dice button."
+  303  git commit --amend -m "Reset dice amount and modifier inputs when clicking on a new dice button."
+  304  git push origin ui-tweaking 
+  305  git checkout master
+  306  git pull origin master
+  307  cd ~/repos/rc0521-code-solutions/css-canvas-medical/
+  308  git status
+  309  add index.html
+  310  add product/styles.css
+  311  add styles.css
+  312  git add index.html
+  313  git add product/styles.css
+  314  git add styles.css
+  315  git status
+  316  git commit -m "Completed Implementation page and changed some styles in previous pages to match implementation."
+  317  git status
+  318  git add styles.css
+  319  git commit -m "Completed Implementation page and changed some styles in previous pages to match implementation."
+  320  git push origin implementation
+  321  git checkout implementation
+  322  git checkout master
+  323  git checkout implentation
+  324  git checkout implementation
+  325  git checkout master
+  326  cd ~/repos/rc0521-code-solutions/
+  327  git status
+  328  cd ~/repos/ajax-project/
+  329  git checkout -b mobile-screens
+  330  git status
+  331  git add css/styles.css
+  332  git commit -m "added screen to media query."
+  333  git push origin mobile-screens
+  334  git checkout master
+  335  git pull origin master
+  336  cd ~/repos/ajax-project/
+  337  git status
+  338  git checkout -b mobile-layout-fix
+  339  git status
+  340  git add css/styles.css
+  341  git status
+  342  git commit -m "Added padding rule to the media query for the spell level buttons."
+  343  git push origin mobile-layout-fix 
+  344  git checkout master
+  345  git pull origin master
+  346  cd ~/repos/rc0521-code-solutions/
+  347  git status
+  348  git checkout master
+  349  git pull origin master
+  350  git checkout -b es6-const-let
+  351  git branch --list
+  352  cd ~/repos/rc0521-code-solutions/
+  353  git status
+  354  git add es6-const-let/
+  355  git status
+  356  git commit -m "Completed es6-const-let."
+  357  git push origin es6-const-let
+  358  git checkout master
+  359  git pull origin master
+  360  git status
+  361  git branch es6-destructuring
+  362  git status
+  363  git switch es6-destructuring
+  364  git status
+  365  git add es6-destructuring/
+  366  git status
+  367  git commit -m "Completed es6-destructuring."
+  368  git push origin es6-destructuring 
+  369  git checkout master
+  370  git pull origin master
+  371  git status
+  372  git pull origin master
+  373  git checkout -b es6-template-literals
+  374  git status
+  375  git add es6-template-literals/
+  376  git status
+  377  git commit -m "Completed es6-template-literals."
+  378  git push origin es6-template-literals 
+  379  git checkout master
+  380  git pull origin master
+  381  git status
+  382  git checkout -b es6-arrow-functions
+  383  git status
+  384  git add es6-arrow-functions/
+  385  git status
+  386  git commit -m "Completed es6-arrow-functions."
+  387  git push origin es6-arrow-functions
+  388  git checkout master
+  389  git pull origin master
+  390  git status
+  391  git checkout -b command-line-basics
+  392  cd command-line-basics
+  393  pwd
+  394  man man
+  395  man cat
+  396  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  397  man ls
+  398  ls
+  399  ls -a
+  400  ls -F
+  401  ls lfz-staff/
+  402  ls lfz-staff/-a
+  403  ls lfz-staff/ -F
+  404  ls lfz-staff/ -a
+  405  ls man
+  406  man ls
+  407  ls -aF lfz-staff > lfz-staff/contents.txt
+  408  cat lfz-staff/contents.txt
+  409  man pwd
+  410  pwd
+  411  pwd > i-was-here.txt
+  412  ls
+  413  cat i-was-here.txt
+  414  man echo
+  415  echo 'hello, world!'
+  416  echo 'Hello, World!' > hello.txt
+  417  cat hello.txt
+  418  man touch
+  419  touch tag-youre-it.txt
+  420  touch snoot/boop.txt
+  421  ls snoot/
+  422  man mkdir
+  423  mkdir parent
+  424  ls
+  425  mkdir -p parent/child/grandchild
+  426  touch parent/child/grandchild/.gitkeep
+  427  ls -a parent/
+  428  ls -a parent/child/grandchild
+  429  man mv
+  430  mv pokiemans pokemon
+  431  ls
+  432  man cp
+  433  cp and-then.txt no-and-then.txt
+  434  cat and-then.txt no-and-then.txt
+  435  man rm
+  436  rm lol.txt
+  437  ls
+  438  rm -r kill-me/
+  439  ls
+  440  man history
+  441  history
+  442  history > command-history.txt
