@@ -8,16 +8,10 @@ const num2 = parseInt(process.argv[4]);
 
 if (operator === 'plus') {
   console.log('Result:', add(num1, num2));
-}
-
-if (operator === 'minus') {
+} else if (operator === 'minus') {
   console.log('Result:', subtract(num1, num2));
-}
-
-if (operator === 'times') {
+} else if (operator === 'times') {
   console.log('Result:', multiply(num1, num2));
-}
-
-if (operator === 'over') {
+} else if (operator === 'over') {
   console.log('Result:', divide(num1, num2));
 }
