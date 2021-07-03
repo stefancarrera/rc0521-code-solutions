@@ -45,6 +45,109 @@ app.post('/api/grades', (req, res, next) => {
     });
 });
 
+app.delete('/api/grades/:gradeId', (req, res, next) => {
+  const gradeId = parseInt(req.params.gradeId, 10);
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({
+      error: '"gradeId" must be a positive integer'
+    });
+    return;
+  }
+
+  const sql = `
+ delete from "grades"
+ where "gradeId" = $1
+ returning *;
+  `;
+
+  const params = [gradeId];
+
+  db.query(sql, params)
+    .then(result => {
+      const grade = result.rows[0];
+      if (!grade) {
+        res.status(404).json({
+          error: `Cannot find grade with "gradeId" ${gradeId}`
+        });
+      } else {
+        res.sendStatus(204);
+      }
+    }).catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occured.'
+      });
+    });
+});
+
+app.get('/api/grades', (req, res, next) => {
+  const sql = `
+  select *
+  from "grades"
+  `;
+
+  db.query(sql)
+    .then(result => {
+      const grades = result.rows;
+      res.json(grades);
+    }).catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occured.'
+      });
+    });
+});
+
+app.put('/api/grades/:gradeId', (req, res, next) => {
+  const name = req.body.name;
+  const course = req.body.course;
+  const score = parseInt(req.body.score, 10);
+  const gradeId = parseInt(req.params.gradeId, 10);
+  const params = [];
+  params.push(name, course, score, gradeId);
+
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({
+      error: '"gradeId" must be a positive integer'
+    });
+  } else if (!Number.isInteger(score) || score < 0) {
+    res.status(400).json({
+      error: '"score" must be a positive integer'
+    });
+  } else if (!name || !course || !score) {
+    res.status(400).json({
+      error: 'No parameter may be left blank. Please ensure name, course, and score are filled out properly.'
+    });
+  }
+
+  const sql = `
+  update "grades"
+  set
+    "name" = $1,
+    "course" = $2,
+    "score" = $3
+  where "gradeId" = $4
+  returning *;
+  `;
+
+  db.query(sql, params)
+    .then(result => {
+      const updatedGrade = result.rows[0];
+      if (!updatedGrade) {
+        res.status(404).json({
+          error: `Cannot find grade with "gradeId" ${gradeId}`
+        });
+      } else {
+        res.json(updatedGrade);
+      }
+    }).catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occured.'
+      });
+    });
+});
+
 app.get('/api/grades/:gradeId', (req, res, next) => {
   const gradeId = parseInt(req.params.gradeId, 10);
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
