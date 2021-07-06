@@ -12,31 +12,15 @@ const names = [
   'Donna'
 ];
 
-function evenNum(num) {
-  for (let i = 0; num >= i; i++) {
-    if ((num % 2 === 0) || (num === 0)) {
-      return true;
-    }
-  }
-}
+const overFive = numbers.filter(num => num > 5);
 
-function overFive(num) {
-  for (let i = 5; num > i; i++) {
-    if (num > 5) {
-      return true;
-    }
-  }
-}
+const evenNum = numbers.filter(num => (num % 2 === 0) || (num === 0));
 
 const startWithE = names.filter(word => word[0] === 'E');
 
-function haveD(word) {
-  if ((word.includes('D') || word.includes('d'))) {
-    return true;
-  }
-}
+const haveD = names.filter(word => (word.includes('D') || word.includes('d')));
 
-console.log('Even Numbers:', numbers.filter(evenNum));
-console.log('Numbers Over 5:', numbers.filter(overFive));
+console.log('Even numbers:', evenNum);
+console.log('Over 5:', overFive);
 console.log('Starts with E:', startWithE);
-console.log('Has a D/d:', names.filter(haveD));
+console.log('Has a D/d:', haveD);
