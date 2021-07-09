@@ -11,21 +11,26 @@ export default class HotButton extends React.Component {
     this.setState({ count: this.state.count + 1 });
   }
 
-  render() {
+  pickClass() {
     if (this.state.count < 3) {
-      return <button onClick={this.handleClick} className="zeroClicks">Click Me!</button>;
+      return 'zeroClicks';
     } else if ((this.state.count >= 3) && (this.state.count < 6)) {
-      return <button onClick={this.handleClick} className="threeClicks">Click Me!</button>;
+      return 'threeClicks';
     } else if ((this.state.count >= 6) && (this.state.count < 9)) {
-      return <button onClick={this.handleClick} className="sixClicks">Click Me!</button>;
+      return 'sixClicks';
     } else if ((this.state.count >= 9) && (this.state.count < 12)) {
-      return <button onClick={this.handleClick} className="nineClicks">Click Me!</button>;
+      return 'nineClicks';
     } else if ((this.state.count >= 12) && (this.state.count < 15)) {
-      return <button onClick={this.handleClick} className="twelveClicks">Click Me!</button>;
+      return 'twelveClicks';
     } else if ((this.state.count >= 15) && (this.state.count < 18)) {
-      return <button onClick={this.handleClick} className="fifteenClicks">Click Me!</button>;
+      return 'fifteenClicks';
     } else if (this.state.count >= 18) {
-      return <button onClick={this.handleClick} className="eightteenClicks">Click Me!</button>;
+      return 'eightteenClicks';
     }
   }
+
+  render() {
+    return <button onClick={this.handleClick} className={this.pickClass}>Click Me!</button>;
+  }
+
 }
