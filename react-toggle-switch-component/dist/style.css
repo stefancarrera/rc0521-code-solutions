@@ -1,0 +1,25 @@
+.off {
+  width: 120px;
+  height: 55px;
+  border-radius: 25px;
+  display: flex;
+  background-color: lightgray;
+  justify-content: flex-start;
+}
+
+.on {
+  width: 120px;
+  height: 55px;
+  border-radius: 25px;
+  display: flex;
+  background-color: rgb(4, 221, 4);
+  justify-content: flex-end;
+}
+
+.switch {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
