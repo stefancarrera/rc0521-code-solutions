@@ -1,0 +1,50 @@
+button {
+  border: 2px solid black;
+  width: 120px;
+  height: 50px;
+  box-shadow: 8px 4px 2px black;
+  font-size: 6px;
+}
+
+.zeroCliks {
+  background-color: gray;
+  color: white;
+  font-size: 6px;
+}
+
+.threeClicks {
+  background-color: #351c75;
+  color: white;
+  font-size: 9px;
+}
+
+.sixClicks {
+  background-color: #674ea7;
+  color: white;
+  font-size: 12px;
+}
+
+.nineClicks {
+  background-color: #e06666;
+  color: white;
+  font-size: 15px;
+}
+
+.twelveClicks {
+  background-color: #f6b26b;
+  font-size: 18px;
+}
+
+.fifteenClicks {
+  background-color: #ff0;
+  font-size: 21px;
+}
+
+.eightteenClicks {
+  background-color: white;
+  font-size: 24px;
+}
+
+button:active {
+  transform: translateY(0.25rem) translateX(0.25rem);
+}
