@@ -16,17 +16,19 @@ export default class Stopwatch extends React.Component {
 
   handleClick() {
     if (this.state.isToggleOn === false) {
-      this.setState({ isToggleOn: true });
       let seconds = this.state.tick;
       this.setState({
+        isToggleOn: true,
         intervalId: setInterval(() => {
           seconds++;
           this.setState({ tick: seconds });
         }, 1000)
       });
     } else {
-      this.setState({ isToggleOn: false });
-      this.setState({ intervalId: clearInterval(this.state.intervalId) });
+      this.setState({
+        isToggleOn: false,
+        intervalId: clearInterval(this.state.intervalId)
+      });
     }
   }
 
