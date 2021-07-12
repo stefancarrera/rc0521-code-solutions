@@ -1,60 +1,46 @@
-// import React from 'react';
+import React from 'react';
 
-// export default class ValidatedInput extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       value: ''
-//     };
+export default class ValidatedInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ''
+    };
 
-//     this.handleChange = this.handleChange.bind(this);
-//   }
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-//   handleChange() {
-//     this.setState({ value: event.target.value });
-//   }
+  handleChange() {
+    this.setState({ value: event.target.value });
+  }
 
-//   render() {
-//     if ({ this.state.value.length < 8 } && { this.state.value.length > 1 }) {
-//       return (
-//         <div>
-//         <form>
-//           <label htmlFor="password">
-//             Password:
-//           </label>
-//           <input name="password" id="password" type="text" value={this.state.value} onChange={this.handleChange}></input>
-//           <span>ICON</span>
-//           <p>Your password is too short.</p>
-//         </form>
-//       </div>
-//     );
-//   } if else ({ this.state.value.length = 0}) {
-//     return (
-//       <div>
-//       <form>
-//         <label htmlFor="password">
-//           Password:
-//         </label>
-//         <input name="password" id="password" type="text" value={this.state.value} onChange={this.handleChange}></input>
-//         <span>ICON</span>
-//         <p>A password is requried</p>
-//       </form>
-//     </div>
-//     );
-//   } else {
-//     return (
-//       <div>
-//       <form>
-//         <label htmlFor="password">
-//           Password:
-//         </label>
-//         <input name="password" id="password" type="text" value={this.state.value} onChange={this.handleChange}></input>
-//         <span>ICON</span>
-//         <p></p>
-//       </form>
-//     </div>
-//     );
-//   }
-// }
+  render() {
+    const password = this.state.value;
+    let p = '';
+    let icon = '';
+    if ((password.length <= 7) && (password.length >= 1)) {
+      p = <p>Your password is too short</p>;
+      icon = <i className="fas fa-times"></i>;
+    } else if (password.length <= 0) {
+      p = <p>A password is required</p>;
+      icon = <i className="fas fa-times"></i>;
+    } else {
+      icon = <i className="fas fa-check"></i>;
+    }
+    return (
+        <div className="col">
+        <form>
+          <label htmlFor="password" onChange={this.handleChange}>
+            Password
+          </label>
+          <div className="row">
+          <input name="password" id="password" type="password" value={this.state.value} onChange={this.handleChange}></input>
+            {icon}
+          </div>
+            {p}
+        </form>
+      </div>
+    );
+  }
 
-// }
+}

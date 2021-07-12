@@ -1,0 +1,23 @@
+.fa-times {
+  margin-left: 0.5rem;
+  color: red;
+}
+
+.fa-check {
+  margin-left: 0.5rem;
+  color: green;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+p {
+  margin-top: 0;
+  color: red;
+}
