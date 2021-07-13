@@ -20,12 +20,12 @@ export default class ValidatedInput extends React.Component {
     let icon = '';
     if ((password.length <= 7) && (password.length >= 1)) {
       p = <p>Your password is too short</p>;
-      icon = <i className="fas fa-times"></i>;
+      icon = <i className="fas fa-times icon icon-red"></i>;
     } else if (password.length <= 0) {
       p = <p>A password is required</p>;
-      icon = <i className="fas fa-times"></i>;
+      icon = <i className="fas fa-times icon icon-red"></i>;
     } else {
-      icon = <i className="fas fa-check"></i>;
+      icon = <i className="fas fa-check icon icon-green"></i>;
     }
     return (
         <div className="col">
