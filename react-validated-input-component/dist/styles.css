@@ -1,0 +1,25 @@
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-green {
+  color: green;
+}
+
+p {
+  margin-top: 0;
+  color: red;
+}
