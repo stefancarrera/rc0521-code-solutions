@@ -10,22 +10,24 @@ export default class Accordion extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(event) {
+  handleClick(id) {
+    if (this.state.openId === id) {
+      this.setState({ openId: null });
+    }
   }
 
   render() {
     return (
-      <div className="container">
-        {/* {
+      <div className="container"> {
           this.props.topics.map(item => (
-            <div className="accordion-item" onClick={() => this.setOpenId(item.id)}>
-              <h2 className="accordion-title">{item.title}</h2>
-              <div className={`accordion-content ${this.state.openId === item.id ? 'text' : 'hide'}`}>
-                {item.content}
+            <div key={item.id} onClick={() => { this.setState({ openId: item.id }); this.handleClick(item.id); }}>
+              <h2>{item.title}</h2>
+              <div className={`${this.state.openId === item.id ? 'text' : 'hide'}`}>
+                {item.text}
               </div>
             </div>
-          ));
-        } */}
+          ))
+          }
       </div>
     );
   }

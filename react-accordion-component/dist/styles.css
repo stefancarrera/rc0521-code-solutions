@@ -11,7 +11,7 @@ h2 {
 .text {
   margin: 0;
   border-top: 0;
-  border-bottom: 0;
+  border-bottom: 2px solid;
   border-left: 2px solid;
   border-right: 2px solid;
 }
