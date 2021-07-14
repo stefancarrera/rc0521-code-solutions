@@ -61,7 +61,7 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(item => {
-        const updatedTodos = this.state.todos;
+        const updatedTodos = this.state.todos.slice();
         updatedTodos[item.id] = item;
         this.setState({ todos: updatedTodos });
       })
