@@ -2,11 +2,11 @@
 
 function countValues(stack) {
   let count = 0;
-  if (stack.peek() !== 'Stack { <empty> }') {
-    while (stack.print() !== 'Stack { <empty> }') {
+  if (stack.peek() !== undefined) {
+    while (stack.peek() !== undefined) {
       stack.pop();
       count++;
     }
-    return count;
   }
+  return count;
 }
